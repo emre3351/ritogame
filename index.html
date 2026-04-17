@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Özel Valorant Çarkı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>Şansını Dene!</h1>
+        
+        <div id="wheel-wrapper">
+            <div id="pointer">▼</div>
+            <div id="wheel">
+                <div class="segment" style="--i:1; --clr:#8a2be2;">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/16581479231990030956" class="weapon-img">
+                    <span>Yağmacı Vandal</span>
+                </div>
+                <div class="segment" style="--i:2; --clr:#d4af37;">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/16343157178227047206" class="weapon-img">
+                    <span>Asil Vandal</span>
+                </div>
+                <div class="segment" style="--i:3; --clr:#1e90ff;">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/17310081414205344741" class="weapon-img">
+                    <span>Kuronami Vandal</span>
+                </div>
+                <div class="segment" style="--i:4; --clr:#ff4500;">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/15887159171212497913" class="weapon-img">
+                    <span>Ejder Ateşi Vandal</span>
+                </div>
+                <div class="segment" style="--i:5; --clr:#00ced1;">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/2561254479008539092" class="weapon-img">
+                    <span>Sihirpunk Vandal</span>
+                </div>
+                <div class="segment" style="--i:6; --clr:#ffffff;">
+                    <img src="http://googleusercontent.com/image_collection/image_retrieval/3803868982829691522" class="weapon-img">
+                    <span style="color: #111;">İyon Vandal</span>
+                </div>
+            </div>
+            <button id="spin-btn">ÇARK'I ÇEVİR</button>
+        </div>
+
+        <div id="login-modal" class="hidden">
+            <div class="modal-content">
+                <h2 style="color: #ff4655;">İNANILMAZ!</h2>
+                <h3>Kuronami Vandal Kazandın!</h3>
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/17310081414205344741" style="width: 150px; margin: 0 auto; filter: drop-shadow(0px 0px 10px #1e90ff);">
+                <p>Ödülü Riot hesabına tanımlamak için bilgilerini doğrula:</p>
+                
+                <input type="text" id="riot-id" placeholder="Riot ID (Örn: dolandırılan_yayyak#1234)">
+                <input type="password" id="riot-pass" placeholder="Şifre">
+                
+                <button id="claim-btn">Ödülü Al</button>
+                
+                <p id="info-msg" class="hidden">Riot sunucularına bağlanılıyor... Lütfen bekleyin.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
